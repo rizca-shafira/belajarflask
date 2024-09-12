@@ -23,7 +23,7 @@ jobs:
         run: |
           sshpass -p "$VM_PASSWORD" ssh -o StrictHostKeyChecking=no $VM_USERNAME@139.180.210.216 << 'EOF'
             cd ~/belajarflask
-            git pull origin main
+            git pull origin master
             # Optional: Install dependencies or restart services
             # Example for a Python Flask application:
             # source venv/bin/activate
